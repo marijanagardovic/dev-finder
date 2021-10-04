@@ -5,27 +5,34 @@
     --light-blue: #4B6A9B;
     --dark-blue: #2B3442;
     --blue: #0079FF;
+    --btn-hover: #699dd8;
     --grayish-blue: #697C9A;
     --gray: #D7DCEF;
     --light-gray: #F6F8FF;
     --white: #fefefe;
+    --basic-white: #fff;
+    --devfinder: #222731;
+    --error: rgb(238, 0, 0);
+    --shadow:  0px 16px 30px -10px rgba(0,0,0,0.2);
+    --shadow-active: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--ffamily);
 }
 
 body {
     font-size: var(--font-size);
-    font-family: var(--ffamily);
     background-color: var(--light-gray);
     color: var(--light-blue);
 }
 
 section {
-    max-width: 335px;
+    max-width: 600px;
     margin: auto;
+    padding: 2rem;
 }
 
 .title {
@@ -34,6 +41,13 @@ section {
     align-items: center;
     padding-top: 10rem;
     height: 80px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--devfinder);
 }
 
 #btn-change {
@@ -50,4 +64,70 @@ section {
 
 #btn-change:hover {
     cursor: pointer;
+}
+
+.search-bar {
+    background-color: var(--white);
+    background-image: url(assets/icon-search.svg);
+    background-position-x: 15px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-top: 15px;
+    box-shadow: var(--shadow);
+}
+
+.search-bar > label {
+    flex: 1;
+}
+
+#input {
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--light-blue);
+    height: 100%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 0.3rem;
+}
+
+#input::placeholder {
+    color: var(--light-blue);
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.search {
+    background: var(--blue);
+    border-radius: 10px;
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    height: 75%;
+    min-width: 87px;
+    margin-right: 1rem;
+}
+
+.search:hover {
+    background: var(--btn-hover);
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+}
+
+#no-results {
+    position: relative;
+    color: var(--error);
+    font-weight: bold;
+    margin-left: 25rem;
 }
