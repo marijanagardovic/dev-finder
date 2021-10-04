@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>DevFinder</title>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="title">
+                <h3>devfinder</h3>
+                <div class="btn-change">
+                    <p class="btn-text">Dark</p>
+                    <div class="btn-icon">
+                        <img src="assets/icon-moon.svg" alt="dark/light mode" id="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <label for="input">
+                    <input type="search" id="input" placeholder="Search GitHub username...">
+                </label>
+                <button class="search" id="btn-search">Search</button>
+                <div class="error">
+                    <p id="no-results">No results</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="card-header">
+                        <img src="./assets" alt="avatar photo" id="avatar">
+                        <div class="info">
+                            <div class="profile-name">
+                                <h2 id="name"></h2>
+                                <p id="username"></p>
+                            </div>
+                            <p class="date"></p>
+                        </div>
+                    </div>
+                    <p class="about"></p>
+                    <div class="profile-status">
+                        <div class="status">
+                            <p class="status-title">Repos</p>
+                            <p class="value" id="repos"></p>
+                        </div>
+                        <div class="status">
+                            <p class="status-title">Followers</p>
+                            <p class="value" id="followers"></p>
+                        </div>
+                        <div class="status">
+                            <p class="status-title">Following</p>
+                            <p class="value" id="following"></p>
+                        </div>
+                    </div>
+                    <div class="profile-links">
+                        <div class="links">
+                            <div class="bottom-icons"><img src="assets/icon-location.svg" alt="icon location"></div>
+                            <p id="location"></p>
+                        </div>
+                        <div class="links">
+                            <div class="bottom-icons"><img src="assets/icon-website.svg" alt="icon website"></div>
+                            <p id="page"></p>
+                        </div>
+                        <div class="links">
+                            <div class="bottom-icons"><img src="assets/icon-twitter.svg" alt="icon twitter"></div>
+                            <p id="twitter"></p>
+                        </div>
+                        <div class="links">
+                            <div class="bottom-icons"><img src="assets/icon-company.svg" alt="icon company"></div>
+                            <p id="company"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="main.js"></script>    
+</body>
+</html>
