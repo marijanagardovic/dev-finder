@@ -32,7 +32,6 @@ body {
 section {
     max-width: 600px;
     margin: auto;
-    padding: 2rem;
 }
 
 .title {
@@ -130,4 +129,109 @@ h3 {
     color: var(--error);
     font-weight: bold;
     margin-left: 25rem;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: var(--shadow);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 450px;
+    min-height: 400px;
+}
+
+.card-header {
+    display: flex;
+}
+
+#avatar {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 70px;
+    margin-left: 20px;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-name > h2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--dark-blue);
+}
+
+#username {
+    color: var(--blue);
+}
+
+#about {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--light-blue);
+}
+
+.profile-status {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--light-gray);
+    border-radius: 10px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85px;
+}
+
+.status-title {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.value {
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--dark-blue);
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 130px;
+    padding: 2rem;
+    width: 150px;
+    align-items: center;
+}
+
+.first-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.second-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
