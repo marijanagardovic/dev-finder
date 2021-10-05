@@ -139,7 +139,7 @@ h3 {
 }
 
 .content {
-    width: 380px;
+    max-width: 380px;
     min-height: 400px;
     margin: auto;
     display: flex;
