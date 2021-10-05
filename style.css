@@ -143,8 +143,13 @@ h3 {
     min-height: 400px;
     margin: auto;
     display: flex;
+    flex-direction: row;
+}
+
+.right-content {
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    flex: 1;
 }
 
 .card-header {
