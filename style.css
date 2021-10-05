@@ -202,7 +202,9 @@ h3 {
 }
 
 .status-title {
-    font-size: 11px;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--light-blue);
 }
 
 .value {
