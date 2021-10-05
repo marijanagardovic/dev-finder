@@ -128,7 +128,8 @@ h3 {
     position: relative;
     color: var(--error);
     font-weight: bold;
-    margin-left: 30rem;
+    margin-left: 40rem;
+    display: none;
 }
 
 .card {
