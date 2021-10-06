@@ -23,7 +23,9 @@ const page = get('page')
 const twitter = get('twitter')
 const company = get('company')
 let darkMode = false;
-//btns
+
+/*BUTTONS*/
+
 btnsubmit.addEventListener('click', function(){
     if (input.value !== ""){
         getUserData(url+input.value);
@@ -52,7 +54,8 @@ btnmode.addEventListener('click', function(){
     }
 })
 
-//functions
+//FUNTIONS 
+
 function getUserData(gitUrl){
     fetch(gitUrl)
     .then(response => response.json())
