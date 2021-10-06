@@ -55,14 +55,17 @@ h3 {
     align-items: center;
     letter-spacing: 2.5px;
     font-weight: 700;
-    color: var(--grayish-blue);
-    width: 70px;
+    width: 75px;
     height: 40px;
     text-transform: uppercase;
 }
 
 #btn-change:hover {
     cursor: pointer;
+}
+
+#btn-text {
+    color: var(--devfinder);
 }
 
 .search-bar {
@@ -93,6 +96,7 @@ h3 {
     width: 100%;
     padding-left: 3rem;
     padding-top: 0.3rem;
+    cursor: pointer;
 }
 
 #input::placeholder {
@@ -100,6 +104,7 @@ h3 {
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
+
 }
 
 .search {
@@ -152,10 +157,6 @@ h3 {
     display: flex;
     flex-direction: column;
     flex: 1;
-}
-
-.card-header {
-    display: flex;
 }
 
 #avatar{
