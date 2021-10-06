@@ -3,25 +3,25 @@ const profilecontainer = document.querySelector('.card');
 const root = document.documentElement.style;
 const get = (param)=> document.getElementById(`${param}`);
 const url = 'https://api.github.com/users/';
-const noresults = get('no-results')
-const btnmode = get('btn-change')
-const modetext = get('btn-text')
-const modeicon =get('icon')
-const btnsubmit = get('btn-search')
-const input = get('input')
-const avatar = get('avatar')
-const userName = get('name')
-const user = get('username')
-const date = get('date')
+const noresults = get('no-results');
+const btnmode = get('btn-change');
+const modetext = get('btn-text');
+const modeicon =get('icon');
+const btnsubmit = get('btn-search');
+const input = get('input');
+const avatar = get('avatar');
+const userName = get('name');
+const user = get('username');
+const date = get('date');
 const months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
-const bio = get('about')
-const repos = get('repos')
-const followers = get('followers')
-const following = get('following')
-const user_location = get('location')
-const page = get('page')
-const twitter = get('twitter')
-const company = get('company')
+const bio = get('about');
+const repos = get('repos');
+const followers = get('followers');
+const following = get('following');
+const user_location = get('location');
+const page = get('page');
+const twitter = get('twitter');
+const company = get('company');
 let darkMode = false;
 
 /*BUTTONS*/
@@ -54,7 +54,7 @@ btnmode.addEventListener('click', function(){
     }
 })
 
-//FUNTIONS 
+/*FUNTIONS */
 
 function getUserData(gitUrl){
     fetch(gitUrl)
@@ -97,7 +97,9 @@ function updateProfile (data){
         noresults.style.display = "block";
     }
 }
-//dark mode default
+
+/* DARK MODE / LIGHT MODE */
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) 
     darkModeProperties()
     else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
