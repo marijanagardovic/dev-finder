@@ -188,6 +188,8 @@ h3 {
 
 #about {
     line-height: 25px;
+    margin-left: 1.5em;
+    padding-top: 1em;
 }
 
 .profile-status {
@@ -251,6 +253,24 @@ h3 {
     }
 
     .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 523px) {
+    section {
+        width: 90%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .profile-status {
+        margin-top: 4em;
+    }
+
+    .profile-links {
         flex-direction: column;
     }
 }
