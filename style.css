@@ -62,9 +62,6 @@ h3 {
 
 #btn-change:hover {
     cursor: pointer;
-}
-
-#btn-text {
     color: var(--devfinder);
 }
 
