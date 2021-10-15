@@ -274,6 +274,7 @@ h3 {
 @media (max-width: 523px) {
     section {
         width: 90%;
+        margin-top: -10rem;
     }
 
     .info {
