@@ -93,6 +93,8 @@ h3 {
     padding-left: 3rem;
     padding-top: 0.3rem;
     cursor: pointer;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 #input::placeholder {
@@ -168,13 +170,16 @@ h3 {
 }
 
 .profile-name h2 {
-    font-size: 16px;
+    font-size: 26px;
+    line-height: 39px;
     font-weight: bold;
     color: var(--dark-blue);
 }
 
 #username {
     color: var(--blue);
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .info {
@@ -216,7 +221,9 @@ h3 {
 }
 
 .value {
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
     font-weight: bold;
     color: var(--dark-blue);
 }
@@ -238,6 +245,11 @@ h3 {
     flex-direction: column;
 }
 
+#date {
+    font-size: 15px;
+    line-height: 22px;
+}
+
 .links {
     display: flex;
     margin-top: 0.5rem;
@@ -245,6 +257,8 @@ h3 {
 
 .links p {
     margin-left: 14px;
+    font-size: 15px;
+    line-height: 22px;
 }
 
 @media (max-width: 1294px) {
