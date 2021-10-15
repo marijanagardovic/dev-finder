@@ -29,6 +29,8 @@ let darkMode = false;
 btnsubmit.addEventListener('click', function(){
     if (input.value !== ""){
         getUserData(url+input.value);
+    } else {
+        input.value = "Please check your input!";
     }
 })
 input.addEventListener("keydown", function(e) {
